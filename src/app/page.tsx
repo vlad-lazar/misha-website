@@ -709,7 +709,11 @@ export default function Portfolio() {
 
           {/* PDF Viewer */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-12 transition-colors duration-300">
-            <PortfolioPdfViewer />
+            <div className="w-full overflow-x-auto">
+              <div className="mx-auto" style={{ maxWidth: "100%" }}>
+                <PortfolioPdfViewer />
+              </div>
+            </div>
           </div>
 
           {/* Project Snapshots */}
@@ -749,10 +753,14 @@ export default function Portfolio() {
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               {t.resume.title}
             </h3>
-            <Button variant="outline">
-              <Download className="w-4 h-4 mr-2" />
-              {t.resume.downloadButton}
-            </Button>
+            <a href="/cv.pdf" download className="inline-block">
+              <Button variant="outline" asChild>
+                <span className="flex items-center">
+                  <Download className="w-4 h-4 mr-2" />
+                  {t.resume.downloadButton}
+                </span>
+              </Button>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
