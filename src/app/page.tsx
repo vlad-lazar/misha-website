@@ -614,7 +614,7 @@ export default function Portfolio() {
                       <Mail className="w-7 h-7" />
                     </a>
                   </div>
-                  <a href="/CV.pdf" download className="mt-4 w-full">
+                  <a href="/cv.pdf" download className="mt-4 w-full">
                     <Button className="w-full" variant="outline">
                       <Download className="w-4 h-4 mr-2" />
                       Download CV (PDF)

@@ -5,7 +5,7 @@ export default function PortfolioPdfViewer() {
   return (
     <div className="w-full h-full">
       <iframe
-        src="/Portfolio.pdf#toolbar=0&navpanes=0&scrollbar=0"
+        src="/portfolio.pdf#toolbar=0&navpanes=0&scrollbar=0"
         title="Portfolio PDF Viewer"
         className="w-full border-none rounded-lg shadow-lg"
         style={{ height: "clamp(400px, 70vh, 900px)" }}
