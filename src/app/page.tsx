@@ -693,7 +693,7 @@ export default function Portfolio() {
               {t.portfolio.title}
             </h3>
             <a
-              href="/Portfolio.pdf"
+              href="/portfolio.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mb-8"
