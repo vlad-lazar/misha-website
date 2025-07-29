@@ -815,7 +815,7 @@ export default function Portfolio() {
         id="contact"
         className="bg-gray-50 dark:bg-gray-800 py-20 transition-colors duration-300"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               {t.contact.title}
@@ -823,7 +823,7 @@ export default function Portfolio() {
           </div>
 
           <div className="flex justify-center w-full items-center">
-            <div className="flex flex-row gap-6 w-full max-w-3xl alig">
+            <div className="flex flex-col md:flex-row gap-6 w-full max-w-3xl">
               {/* Email */}
               <div className="flex items-center space-x-4 w-full">
                 <div className="flex-shrink-0 p-3 text-white bg-gray-900 dark:bg-gray-700 rounded-lg">
