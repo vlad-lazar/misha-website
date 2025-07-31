@@ -7,7 +7,12 @@ const nextConfig: NextConfig = {
     config.resolve.fallback = {
       ...(config.resolve.fallback || {}),
       canvas: false,
+      fs: false,
+      path: false,
+      os: false,
     };
+    config.externals = config.externals || [];
+    config.externals.push({ canvas: "commonjs canvas" });
     return config;
   },
 };
