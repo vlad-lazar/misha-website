@@ -706,7 +706,12 @@ export default function Portfolio() {
                       <Mail className="w-7 h-7" />
                     </a>
                   </div>
-                  <a href="/cv.pdf" download className="mt-4 w-full">
+                  <a
+                    href="/cv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 w-full"
+                  >
                     <Button className="w-full" variant="outline">
                       <Download className="w-4 h-4 mr-2" />
                       Download CV (PDF)
@@ -898,7 +903,12 @@ export default function Portfolio() {
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               {t.resume.title}
             </h3>
-            <a href="/cv.pdf" download className="inline-block">
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
               <Button variant="outline" asChild>
                 <span className="flex items-center">
                   <Download className="w-4 h-4 mr-2" />
