@@ -23,13 +23,19 @@ import {
   Sun,
   Instagram,
   Linkedin,
+  Camera,
 } from "lucide-react";
-import Image from "next/image";
 import { useEffect } from "react";
+import Image from "next/image";
+import ImageCarousel from "@/components/ImageCarousel";
 
 // Localization data
 const localizationData = {
   en: {
+    carousel: {
+      description:
+        "A selection of my photography hobby—studying light, form, and texture in quiet moments that shape my perspective and design approach.",
+    },
     navigation: {
       about: "About",
       portfolio: "Portfolio",
@@ -40,11 +46,11 @@ const localizationData = {
       name: "Mihai Railean",
       title: "Architectural Technologist",
       summary:
-        "A dedicated architectural technologist focused on transforming design concepts into buildable realities through technical precision, BIM coordination, and innovative problem-solving.",
+        "Architectural technologist with a strong focus on technical design, BIM coordination, and integrated project preparation. Skilled in Revit-based modelling, construction detailing, and translating design intent into executable plans. Experienced in renovation projects involving complex buildings and multidisciplinary coordination. Practical understanding of project phasing, buildability, supplier communication, and documentation for cost-efficient construction. Motivated by social impact, quality execution, and collaborative problem-solving.",
     },
     about: {
       title: "About Me",
-      bio: "Ever since beginning my journey in Architectural Technology and Construction Management, I've been driven by the idea that architecture is more than just design—it's a refined balance between precision, technical innovation, and human-focused experience. I thrive in fast-paced environments, enjoy translating ambitious ideas into detailed technical outcomes, and am passionate about sustainable urban transformation and modular design.",
+      bio: "I’m Mihai Railean, an architectural technologist driven by a clear purpose: to create spaces that are not only technically sound but also emotionally grounded. With a strong foundation in BIM coordination, renovation planning, and construction detailing, I approach architecture as a layered process—one that balances structure, usability, and atmosphere.\n\nBeyond the technical, my work is shaped by a sensitivity to light, material, and context. Influenced by visual storytelling and a deep interest in how people experience space, I bring a considered, almost editorial eye to every phase of a project—from initial scan-to-BIM workflows to the final detailing of interiors.\n\nWhat sets my approach apart is a commitment to both precision and presence: ensuring that every design decision supports not just buildability, but clarity, calm, and coherence in the final space.",
       skillsTitle: "Core Skills",
       skills: [
         "BIM Modeling & Technical Documentation",
@@ -56,6 +62,11 @@ const localizationData = {
       ],
       hobbiesTitle: "Hobbies & Interests",
       hobbies: {
+        photography: {
+          title: "Fotografie",
+          description:
+            "Licht, Form und Textur studieren – stille Momente einfangen, die meine Sichtweise und mein Raumdesign prägen.",
+        },
         running: {
           title: "Running",
           description:
@@ -64,7 +75,7 @@ const localizationData = {
         guitar: {
           title: "Playing Guitar",
           description:
-            "Crafting melodies and experimenting with chords, from acoustic folk to electric riffs.",
+            "Exploring sound through guitar and bass—blending textured tones and layered rhythms shaped by indie and shoegaze influences.",
         },
         music: {
           title: "Music Recording",
@@ -136,6 +147,15 @@ const localizationData = {
     },
   },
   de: {
+    photography: {
+      title: "Fotografie",
+      description:
+        "Licht, Form und Textur studieren – stille Momente einfangen, die meine Sichtweise und mein Raumdesign prägen.",
+    },
+    carousel: {
+      description:
+        "Eine Auswahl meiner Fotografie-Hobby—Licht, Form und Textur in stillen Momenten studieren, die meine Sichtweise und mein Raumdesign prägen.",
+    },
     navigation: {
       about: "Über mich",
       portfolio: "Portfolio",
@@ -146,11 +166,11 @@ const localizationData = {
       name: "Mihai Railean",
       title: "Architekturtechnologe",
       summary:
-        "Ein engagierter Architekturtechnologe, der sich darauf konzentriert, Entwurfskonzepte durch technische Präzision, BIM-Koordination und innovative Problemlösungen in baureife Realitäten umzusetzen.",
+        "Architekturtechnologe mit starkem Fokus auf technische Planung, BIM-Koordination und integrierte Projektvorbereitung. Erfahren in Revit-Modellierung, Baudetailierung und der Umsetzung von Entwurfsideen in ausführbare Pläne. Praktische Erfahrung mit Renovierungsprojekten komplexer Gebäude und interdisziplinärer Koordination. Fundiertes Verständnis von Projektphasen, Bauabläufen, Lieferantenkommunikation und Dokumentation für kosteneffizientes Bauen. Motiviert durch soziale Wirkung, hochwertige Ausführung und gemeinschaftliche Problemlösung.",
     },
     about: {
       title: "Über mich",
-      bio: "Seit Beginn meiner Ausbildung in Architekturtechnologie und Baumanagement treibt mich die Idee an, dass Architektur mehr ist als nur Design – sie ist eine feine Balance zwischen Präzision, technischer Innovation und menschzentrierter Erfahrung. Ich blühe in schnelllebigen Umgebungen auf, genieße es, ehrgeizige Ideen in detaillierte technische Ergebnisse umzusetzen, und begeistere mich für nachhaltige städtische Transformation und modulares Design.",
+      bio: "Ich bin Mihai Railean, ein Architekturtechnologe mit klarem Ziel: Räume zu schaffen, die nicht nur technisch fundiert, sondern auch emotional verankert sind. Mit einer starken Basis in BIM-Koordination, Renovierungsplanung und Baudetailierung betrachte ich Architektur als einen vielschichtigen Prozess – einen, der Struktur, Nutzbarkeit und Atmosphäre in Einklang bringt.\n\nÜber das Technische hinaus wird meine Arbeit von Sensibilität für Licht, Material und Kontext geprägt. Beeinflusst von visueller Erzählweise und großem Interesse daran, wie Menschen Räume erleben, bringe ich einen überlegten, fast redaktionellen Blick in jede Projektphase ein – von den ersten Scan-to-BIM-Workflows bis zur finalen Ausarbeitung der Innenräume.\n\nWas meinen Ansatz besonders macht, ist das Engagement für Präzision und Präsenz: Jede Designentscheidung soll nicht nur die Bauausführung unterstützen, sondern auch Klarheit, Ruhe und Kohärenz im fertigen Raum fördern.",
       skillsTitle: "Kernkompetenzen",
       skills: [
         "BIM-Modellierung & Technische Dokumentation",
@@ -162,6 +182,11 @@ const localizationData = {
       ],
       hobbiesTitle: "Hobbys & Interessen",
       hobbies: {
+        photography: {
+          title: "Fotografie",
+          description:
+            "Licht, Form und Textur studieren – stille Momente einfangen, die meine Sichtweise und mein Raumdesign prägen.",
+        },
         running: {
           title: "Laufen",
           description:
@@ -170,7 +195,7 @@ const localizationData = {
         guitar: {
           title: "Gitarre spielen",
           description:
-            "Melodien erschaffen und mit Akkorden experimentieren, von akustischem Folk bis zu elektrischen Riffs.",
+            "Klangwelten mit Gitarre und Bass erkunden – strukturierte Töne und vielschichtige Rhythmen, inspiriert von Indie und Shoegaze.",
         },
         music: {
           title: "Musikaufnahme",
@@ -242,6 +267,15 @@ const localizationData = {
     },
   },
   ro: {
+    photography: {
+      title: "Fotografie",
+      description:
+        "Studiind lumina, forma și textura—surprind momente liniștite care modelează felul în care văd și proiectez spațiul.",
+    },
+    carousel: {
+      description:
+        "O selecție din hobby-ul meu de fotografie—studiind lumina, forma și textura în momente liniștite care modelează perspectiva și abordarea mea de design.",
+    },
     navigation: {
       about: "Despre",
       portfolio: "Portofoliu",
@@ -252,11 +286,11 @@ const localizationData = {
       name: "Mihai Railean",
       title: "Tehnolog Arhitect",
       summary:
-        "Un tehnolog arhitect dedicat, axat pe transformarea conceptelor de design în realități construibile prin precizie tehnică, coordonare BIM și rezolvare inovatoare a problemelor.",
+        "Tehnolog arhitect cu accent puternic pe proiectare tehnică, coordonare BIM și pregătirea integrată a proiectelor. Experimentat în modelare Revit, detaliere de construcție și transpunerea intenției de design în planuri executabile. Experiență în proiecte de renovare pentru clădiri complexe și coordonare multidisciplinară. Înțelegere practică a etapelor de proiect, construcției, comunicării cu furnizorii și documentației pentru construcții eficiente din punct de vedere al costurilor. Motivare prin impact social, execuție de calitate și rezolvare colaborativă a problemelor.",
     },
     about: {
       title: "Despre Mine",
-      bio: "De la începutul parcursului meu în Tehnologia Arhitecturală și Managementul Construcțiilor, am fost condus de ideea că arhitectura este mai mult decât design – este un echilibru rafinat între precizie, inovație tehnică și experiență centrată pe om. Mă dezvolt în medii dinamice, îmi place să traduc idei ambițioase în rezultate tehnice detaliate și sunt pasionat de transformarea urbană durabilă și de designul modular.",
+      bio: "Sunt Mihai Railean, tehnolog arhitect motivat de un scop clar: să creez spații care sunt nu doar solide din punct de vedere tehnic, ci și ancorate emoțional. Cu o bază solidă în coordonare BIM, planificare de renovări și detaliere de construcție, abordez arhitectura ca pe un proces stratificat—unul care echilibrează structura, funcționalitatea și atmosfera.\n\nDincolo de tehnic, munca mea este modelată de sensibilitatea față de lumină, material și context. Influențat de povestea vizuală și de interesul profund pentru modul în care oamenii experimentează spațiul, aduc o privire atentă, aproape editorială, în fiecare etapă a proiectului—de la primele fluxuri scan-to-BIM până la detalierea finală a interioarelor.\n\nCeea ce diferențiază abordarea mea este angajamentul față de precizie și prezență: fiecare decizie de design susține nu doar execuția, ci și claritatea, calmul și coerența spațiului final.",
       skillsTitle: "Competențe Cheie",
       skills: [
         "Modelare BIM și Documentație Tehnică",
@@ -268,6 +302,11 @@ const localizationData = {
       ],
       hobbiesTitle: "Hobby-uri și Interese",
       hobbies: {
+        photography: {
+          title: "Fotografie",
+          description:
+            "Studiind lumina, forma și textura—surprinzând momente liniștite care modelează felul în care văd și proiectez spațiul.",
+        },
         running: {
           title: "Alergat",
           description:
@@ -276,7 +315,7 @@ const localizationData = {
         guitar: {
           title: "Cântat la Chitară",
           description:
-            "Creând melodii și experimentând cu acorduri, de la folk acustic la riff-uri electrice.",
+            "Explorând sunetul prin chitară și bas—îmbinând tonuri texturate și ritmuri stratificate inspirate de indie și shoegaze.",
         },
         music: {
           title: "Înregistrări Muzicale",
@@ -390,6 +429,12 @@ export default function Portfolio() {
   };
 
   const t = localizationData[currentLang];
+  // Carousel images (use portfolio images for now)
+  const carouselImages = [
+    { src: "/can_marcal.png", alt: "Can Marçal Restaurant" },
+    { src: "/student_housing.png", alt: "Student Housing Development" },
+    { src: "/two_story_house.png", alt: "Two-Story Family House" },
+  ];
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
@@ -427,6 +472,8 @@ export default function Portfolio() {
         return <Play className="w-6 h-6" />;
       case "bmx":
         return <Bike className="w-6 h-6" />;
+      case "photography":
+        return <Camera className="w-6 h-6" />;
       default:
         return <div className="w-6 h-6 bg-gray-300 rounded" />;
     }
@@ -679,6 +726,60 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Image Carousel Section */}
+      <section className="w-full flex flex-col justify-center items-center py-16 bg-gray-50 dark:bg-gray-900">
+        <div className="w-full max-w-5xl h-fit px-2 md:px-8">
+          <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            {t.carousel.description}
+          </h3>
+          <ImageCarousel
+            images={[
+              {
+                src: "/image5.jpeg",
+                alt: "Photo 1",
+              },
+              {
+                src: "/image2.jpeg",
+                alt: "Photo 2",
+              },
+              {
+                src: "/image3.jpeg",
+                alt: "Photo 3",
+              },
+              {
+                src: "/image4.jpeg",
+                alt: "Photo 4",
+              },
+              {
+                src: "/image1.jpeg",
+                alt: "Photo 5",
+              },
+              {
+                src: "/image6.jpeg",
+                alt: "Photo 6",
+              },
+              {
+                src: "/image7.jpeg",
+                alt: "Photo 7",
+              },
+              {
+                src: "/image8.jpeg",
+                alt: "Photo 8",
+              },
+              {
+                src: "/image9.jpeg",
+                alt: "Photo 9",
+              },
+              {
+                src: "/image10.jpeg",
+                alt: "Photo 10",
+              },
+            ]}
+            description="A selection of my photography hobby—studying light, form, and texture in quiet moments that shape my perspective and design approach."
+          />
         </div>
       </section>
 
