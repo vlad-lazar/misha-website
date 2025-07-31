@@ -707,7 +707,7 @@ export default function Portfolio() {
                     </a>
                   </div>
                   <a
-                    href="/cv.pdf"
+                    href="/CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 w-full"
@@ -904,7 +904,7 @@ export default function Portfolio() {
               {t.resume.title}
             </h3>
             <a
-              href="/cv.pdf"
+              href="/CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block"
