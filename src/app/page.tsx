@@ -33,8 +33,7 @@ import ImageCarousel from "@/components/ImageCarousel";
 const localizationData = {
   en: {
     carousel: {
-      description:
-        "A selection of my photography hobby—studying light, form, and texture in quiet moments that shape my perspective and design approach.",
+      description: "Photography Portfolio",
     },
     navigation: {
       about: "About",
@@ -63,9 +62,9 @@ const localizationData = {
       hobbiesTitle: "Hobbies & Interests",
       hobbies: {
         photography: {
-          title: "Fotografie",
+          title: "Photography",
           description:
-            "Licht, Form und Textur studieren – stille Momente einfangen, die meine Sichtweise und mein Raumdesign prägen.",
+            "Studying light, form, and texture—capturing quiet moments that shape how I see and design spaces.",
         },
         running: {
           title: "Running",
@@ -123,8 +122,17 @@ const localizationData = {
           role: "Construction & Design Team Intern",
           company: "Sircle Collection - Amsterdam, NL",
           date: "02.2024 - 07.2024",
-          description:
-            "Supported real-world renovation projects across Europe, contributing to technical preparation, supplier coordination, and on-site LIDAR scanning for hotel and restaurant refurbishments.",
+          description: [
+            "Helped support the team for various tasks within building projects of hotels and restaurants such as:",
+            "Worked on real-world renovation projects across Europe in Revit, contributing to the technical preparation and coordination of hotel and restaurant refurbishments.",
+            "Collaborated on the soft refurbishment of Max Brown 5th District (Vienna), including supplier coordination and layout planning.",
+            "Participated in supplier planning and cost coordination, helping structure documentation and internal procurement tools.",
+            "Conducted on-site LIDAR scans and generated as-built BIM models to support accurate scope planning and phased delivery.",
+            "Compiled a structured inventory database of surplus assets to support logistics and procurement.",
+            "Created a standardized supplier and item catalog to streamline design across Max Brown properties.",
+            "Participated in cross-departmental meetings to help revise Sircle Collection’s official brand design guidelines.",
+            "Proposed new interior functions (e.g. spa and gym) with functional zoning and technical integration for executive review.",
+          ],
         },
       ],
       education: [
@@ -132,6 +140,13 @@ const localizationData = {
           degree: "Architectural Technology and Construction Management",
           institution: "VIA University College",
           date: "2021 - 2025",
+          description: [
+            "Bachelor Thesis – Can Marçal Restaurant, Barcelona: Delivered a full Revit-based BIM renovation for Sircle Collection, including structural analysis, building services, modular detailing, fire strategy and a contractor-ready installation guide.",
+            "Student Housing Redevelopment – Horsens: Conducted scan-to-BIM conversion of an industrial building for adaptive reuse; planned fire zones, acoustic layers, and material specs for steel-frame buildout.",
+            "Modular Social Housing: Created Revit families, module libraries, and energy-optimized detailing with focus on prefabrication and sound performance.",
+            "Sports Hall & Cafeteria: Focused on modular construction, envelope detailing, and Revit-based coordination for large-scale prefabricated components.",
+            "Residential Projects (Semesters 1–2): Designed one- and two-storey homes with complete Revit documentation and construction-level detailing.",
+          ],
         },
       ],
     },
@@ -150,11 +165,10 @@ const localizationData = {
     photography: {
       title: "Fotografie",
       description:
-        "Licht, Form und Textur studieren – stille Momente einfangen, die meine Sichtweise und mein Raumdesign prägen.",
+        "Eine Auswahl meiner fotografischen Arbeiten – Licht, Form und Textur in ruhigen Momenten studieren, die meine Perspektive und mein Designverständnis prägen.",
     },
     carousel: {
-      description:
-        "Eine Auswahl meiner Fotografie-Hobby—Licht, Form und Textur in stillen Momenten studieren, die meine Sichtweise und mein Raumdesign prägen.",
+      description: "Fotografie-Portfolio",
     },
     navigation: {
       about: "Über mich",
@@ -185,7 +199,7 @@ const localizationData = {
         photography: {
           title: "Fotografie",
           description:
-            "Licht, Form und Textur studieren – stille Momente einfangen, die meine Sichtweise und mein Raumdesign prägen.",
+            "Studieren von Licht, Form und Textur—stille Momente einfangen, die meine Sichtweise und mein Raumdesign prägen.",
         },
         running: {
           title: "Laufen",
@@ -243,8 +257,17 @@ const localizationData = {
           role: "Praktikant im Bau- & Designteam",
           company: "Sircle Collection - Amsterdam, NL",
           date: "02.2024 - 07.2024",
-          description:
-            "Unterstützung bei realen Renovierungsprojekten in ganz Europa, Mitwirkung bei der technischen Vorbereitung, Lieferantenkoordination und LIDAR-Scans vor Ort für Hotel- und Restaurantumbauten.",
+          description: [
+            "Unterstützung des Teams bei verschiedenen Aufgaben im Rahmen von Bauprojekten für Hotels und Restaurants, darunter:",
+            "Mitarbeit an realen Renovierungsprojekten in ganz Europa mit Revit, insbesondere bei der technischen Vorbereitung und Koordination von Hotel- und Restaurantumbauten.",
+            "Mitwirkung an der Soft-Renovierung des Max Brown 5th District (Wien), einschließlich Lieferantenkoordination und Layoutplanung.",
+            "Teilnahme an Lieferantenplanung und Kostenkoordination, Unterstützung bei der Strukturierung von Dokumentation und internen Beschaffungstools.",
+            "Durchführung von LIDAR-Scans vor Ort und Erstellung von Bestands-BIM-Modellen zur Unterstützung der genauen Leistungsplanung und phasenweisen Umsetzung.",
+            "Erstellung einer strukturierten Inventardatenbank für überschüssige Vermögenswerte zur Unterstützung von Logistik und Beschaffung.",
+            "Entwicklung eines standardisierten Lieferanten- und Artikelkatalogs zur Vereinheitlichung des Designs in Max Brown Hotels.",
+            "Teilnahme an abteilungsübergreifenden Meetings zur Überarbeitung der offiziellen Designrichtlinien der Sircle Collection.",
+            "Vorschlag neuer Innenraumfunktionen (z. B. Spa und Fitnessbereich) mit funktionaler Zonierung und technischer Integration für die Geschäftsleitung.",
+          ],
         },
       ],
       education: [
@@ -252,6 +275,13 @@ const localizationData = {
           degree: "Architekturtechnologie und Baumanagement",
           institution: "VIA University College",
           date: "2021 - 2025",
+          description: [
+            "Bachelorarbeit – Can Marçal Restaurant, Barcelona: Durchführung einer vollständigen, Revit-basierten BIM-Renovierung für Sircle Collection, einschließlich Strukturanalyse, Gebäudetechnik, modularer Detaillierung, Brandschutzkonzept und einer ausführungsreifen Installationsanleitung.",
+            "Studentenwohnheim-Umnutzung – Horsens: Scan-to-BIM-Umwandlung eines Industriegebäudes für die adaptive Nachnutzung; Planung von Brandabschnitten, Akustikschichten und Materialvorgaben für den Stahlrahmen-Ausbau.",
+            "Modulare Sozialwohnungen: Erstellung von Revit-Familien, Modullibraries und energieoptimierter Detaillierung mit Fokus auf Vorfertigung und Schallschutz.",
+            "Sporthalle & Cafeteria: Fokus auf modulare Bauweise, Fassadendetaillierung und Revit-basierte Koordination für großformatige vorgefertigte Bauteile.",
+            "Wohnbauprojekte (Semester 1–2): Entwurf von Ein- und Zweifamilienhäusern mit vollständiger Revit-Dokumentation und Ausführungsdetails.",
+          ],
         },
       ],
     },
@@ -270,11 +300,10 @@ const localizationData = {
     photography: {
       title: "Fotografie",
       description:
-        "Studiind lumina, forma și textura—surprind momente liniștite care modelează felul în care văd și proiectez spațiul.",
+        "O selecție din lucrările mele fotografice – studiez lumina, forma și textura în momente de liniște care îmi modelează perspectiva și abordarea în design.",
     },
     carousel: {
-      description:
-        "O selecție din hobby-ul meu de fotografie—studiind lumina, forma și textura în momente liniștite care modelează perspectiva și abordarea mea de design.",
+      description: "Portofoliu fotografic",
     },
     navigation: {
       about: "Despre",
@@ -363,8 +392,17 @@ const localizationData = {
           role: "Stagiar în Echipa de Construcții și Design",
           company: "Sircle Collection - Amsterdam, NL",
           date: "02.2024 - 07.2024",
-          description:
-            "Am sprijinit proiecte de renovare în întreaga Europă, contribuind la pregătirea tehnică, coordonarea furnizorilor și scanarea LIDAR la fața locului pentru renovări de hoteluri și restaurante.",
+          description: [
+            "Am ajutat echipa cu diverse sarcini în cadrul proiectelor de construcții pentru hoteluri și restaurante, precum:",
+            "Am lucrat la proiecte reale de renovare în toată Europa în Revit, contribuind la pregătirea tehnică și coordonarea renovărilor de hoteluri și restaurante.",
+            "Am colaborat la renovarea soft a Max Brown 5th District (Viena), inclusiv coordonarea furnizorilor și planificarea layout-ului.",
+            "Am participat la planificarea furnizorilor și coordonarea costurilor, ajutând la structurarea documentației și a instrumentelor interne de achiziții.",
+            "Am efectuat scanări LIDAR la fața locului și am generat modele BIM as-built pentru a sprijini planificarea precisă a lucrărilor și livrarea pe faze.",
+            "Am compilat o bază de date structurată cu inventarul activelor excedentare pentru a sprijini logistica și achizițiile.",
+            "Am creat un catalog standardizat de furnizori și articole pentru a eficientiza designul în proprietățile Max Brown.",
+            "Am participat la întâlniri interdepartamentale pentru a ajuta la revizuirea ghidurilor oficiale de design ale Sircle Collection.",
+            "Am propus noi funcțiuni interioare (ex: spa și sală de sport) cu zonare funcțională și integrare tehnică pentru analiza conducerii.",
+          ],
         },
       ],
       education: [
@@ -372,6 +410,13 @@ const localizationData = {
           degree: "Tehnologie Arhitecturală și Managementul Construcțiilor",
           institution: "VIA University College",
           date: "2021 - 2025",
+          description: [
+            "Lucrare de licență – Can Marçal Restaurant, Barcelona: Am realizat o renovare BIM completă în Revit pentru Sircle Collection, incluzând analiză structurală, instalații, detaliere modulară, strategie de incendiu și ghid de instalare pentru antreprenor.",
+            "Reconversie locuințe studențești – Horsens: Am efectuat scan-to-BIM pentru o clădire industrială destinată reconversiei; am planificat zone de incendiu, straturi acustice și specificații de materiale pentru structura metalică.",
+            "Locuințe sociale modulare: Am creat familii Revit, biblioteci de module și detalii optimizate energetic cu accent pe prefabricare și performanță acustică.",
+            "Sală de sport & cafenea: M-am concentrat pe construcție modulară, detalierea anvelopei și coordonare în Revit pentru componente prefabricate de mari dimensiuni.",
+            "Proiecte rezidențiale (Semestrele 1–2): Am proiectat case cu unul și două niveluri cu documentație completă în Revit și detalii de execuție.",
+          ],
         },
       ],
     },
@@ -778,7 +823,6 @@ export default function Portfolio() {
                 alt: "Photo 10",
               },
             ]}
-            description="A selection of my photography hobby—studying light, form, and texture in quiet moments that shape my perspective and design approach."
           />
         </div>
       </section>
@@ -883,9 +927,17 @@ export default function Portfolio() {
                       <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
                         {exp.date}
                       </p>
-                      <p className="text-gray-700 dark:text-gray-300">
-                        {exp.description}
-                      </p>
+                      {Array.isArray(exp.description) ? (
+                        <ul className="list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-300">
+                          {exp.description.map((item, idx) => (
+                            <li key={idx}>{item}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-gray-700 dark:text-gray-300">
+                          {exp.description}
+                        </p>
+                      )}
                     </CardContent>
                   </Card>
                 ))}
@@ -910,6 +962,17 @@ export default function Portfolio() {
                       <p className="text-sm text-gray-500 dark:text-gray-400">
                         {edu.date}
                       </p>
+                      {Array.isArray(edu.description) ? (
+                        <ul className="list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-300 mt-2">
+                          {edu.description.map((item, idx) => (
+                            <li key={idx}>{item}</li>
+                          ))}
+                        </ul>
+                      ) : edu.description ? (
+                        <p className="text-gray-700 dark:text-gray-300 mt-2">
+                          {edu.description}
+                        </p>
+                      ) : null}
                     </CardContent>
                   </Card>
                 ))}

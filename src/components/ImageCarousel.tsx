@@ -10,13 +10,9 @@ export type ImageObj = {
 
 interface ImageCarouselProps {
   images: ImageObj[];
-  description: string;
 }
 
-export default function ImageCarousel({
-  images,
-  description,
-}: ImageCarouselProps) {
+export default function ImageCarousel({ images }: ImageCarouselProps) {
   const [current, setCurrent] = useState(0);
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogImg, setDialogImg] = useState<ImageObj | null>(null);
@@ -112,10 +108,6 @@ export default function ImageCarousel({
             }`}
           />
         ))}
-      </div>
-      {/* General Description */}
-      <div className="mt-4 text-center text-gray-700 dark:text-gray-300 text-base min-h-[48px]">
-        {description}
       </div>
     </div>
   );
